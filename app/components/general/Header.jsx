@@ -1,4 +1,5 @@
 import headerStyles from "../../styles/header.module.css";
+import Link from "next/link";
 
 export default function Header() {
     return (
@@ -6,18 +7,26 @@ export default function Header() {
             <div>Ustinov Corp.</div>
             <div className={headerStyles.centerBlock}>
                 <div>
-                    <a href="/contacts">Контакты</a>
+                    <Link href="/contacts">
+                        <a>Контакты</a>
+                    </Link>
                 </div>
                 <div>
-                    <a href="/about">О нас</a>
+                    <Link href="/about">
+                        <a>О нас</a>
+                    </Link>
                 </div>
                 <div>
-                    <a href="/otherInfo">Другое</a>
+                    <Link href="/process">
+                        <a>Процесс</a>
+                    </Link>
                 </div>
             </div>
             <div className={headerStyles.rightBlock}>
                 <div>
-                    <a href="/">На главную</a>
+                    <Link href="/">
+                        <a>На главную</a>
+                    </Link>
                 </div>
             </div>
         </div>
