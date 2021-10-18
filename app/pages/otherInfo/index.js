@@ -1,3 +1,9 @@
+import { MainLayout } from "../../components/MainLayout";
+
 export default function OtherInfo() {
-    return <h1>welcome to other info page</h1>;
+    return (
+        <MainLayout title="Информация">
+            Добро пожаловать на страницу информации
+        </MainLayout>
+    );
 }

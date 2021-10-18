@@ -1,3 +1,9 @@
+import { MainLayout } from "../../components/MainLayout";
+
 export default function Contacts() {
-    return <h1>welcome to contacts page</h1>;
+    return (
+        <MainLayout title="Наши контакты">
+            Добро пожаловать на страницу контактов
+        </MainLayout>
+    );
 }
