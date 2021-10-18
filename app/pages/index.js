@@ -16,13 +16,13 @@ export default function Home() {
                 <div>Ustinov Corp.</div>
                 <div className={headerStyles.rightBlock}>
                     <div>
-                        <a href="/#">About</a>
+                        <a href="/about">About</a>
                     </div>
                     <div>
-                        <a href="/#">Contacts</a>
+                        <a href="/contacts">Contacts</a>
                     </div>
                     <div>
-                        <a href="/#">Other info</a>
+                        <a href="/otherInfo">Other info</a>
                     </div>
                 </div>
             </div>
