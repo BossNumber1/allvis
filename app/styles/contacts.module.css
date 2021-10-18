@@ -1,0 +1,14 @@
+.bodyPage {
+    margin-left: 10%;
+    margin-right: 50%;
+}
+
+.bodyPage div {
+    margin-bottom: 5px;
+}
+
+.bodyPage a {
+    /* color: inherit; */
+    color: gray;
+    /* text-decoration: underline; */
+}
