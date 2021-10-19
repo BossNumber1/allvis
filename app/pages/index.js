@@ -26,14 +26,15 @@ export default function Home() {
                 </div>
             </div>
             <div style={{ textAlign: "center", marginTop: 32 }}>
-                <div>Сделаю за 2-3 дня</div>
-                <div>за 2000 рублей</div>
+                <div>2-3 дня - 2000 рублей</div>
                 <div>
                     <h1>Что вы получаете?</h1>
                 </div>
-                <div>Экономию времени и сил</div>
-                <div>Качество</div>
             </div>
+            <ul>
+                <li>Экономию времени и сил</li>
+                <li>Качество</li>
+            </ul>
         </MainLayout>
     );
 }
