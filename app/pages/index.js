@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <MainLayout title="Cтартовая страница">
             <div style={{ marginBottom: 30 }}>
-                Привет. Создаю сайты-визитки на заказ. Вот мои труды:
+                Привет. <b>Создаю сайты-визитки</b> на заказ. Вот мои труды:
             </div>
             <div className={homeStyles.exampleBCards}>
                 <div style={{ border: "1px solid black;" }}>
@@ -24,6 +24,15 @@ export default function Home() {
                     </div>
                     <div style={{ textAlign: "center" }}>Сайт про ранчо</div>
                 </div>
+            </div>
+            <div style={{ textAlign: "center", marginTop: 32 }}>
+                <div>Сделаю за 2-3 дня</div>
+                <div>за 2000 рублей</div>
+                <div>
+                    <h1>Что вы получаете?</h1>
+                </div>
+                <div>Экономию времени и сил</div>
+                <div>Качество</div>
             </div>
         </MainLayout>
     );

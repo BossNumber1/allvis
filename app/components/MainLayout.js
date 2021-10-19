@@ -9,7 +9,7 @@ export function MainLayout({ children, title }) {
                 <title>{`Генератор сайтов-визиток | ${title}`}</title>
                 <meta
                     name="keywords"
-                    content="для всей семьи, в кругу друзей, write, people, развлечение"
+                    content="сайты на заказ, создание сайтов-визиток, сайты-визитки, сайт-визитка"
                 />
                 <meta
                     name="description"

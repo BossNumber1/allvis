@@ -19,3 +19,8 @@
     display: flex;
     margin-left: auto;
 }
+
+.activeLink {
+    color: rgb(245, 71, 71);
+    pointer-events: none;
+}
