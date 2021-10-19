@@ -7,14 +7,6 @@ export function MainLayout({ children, title }) {
         <>
             <Head>
                 <title>{`Генератор сайтов-визиток | ${title}`}</title>
-                <meta
-                    name="keywords"
-                    content="сайты на заказ, создание сайтов-визиток, сайты-визитки, сайт-визитка"
-                />
-                <meta
-                    name="description"
-                    content="Создание сайтов-визиток на заказ"
-                />
             </Head>
             <Header />
             <main className={homeStyles.main}>{children}</main>
