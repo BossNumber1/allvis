@@ -1,13 +1,11 @@
 .commonBlock {
-    background-color: rgb(245, 227, 196);
     display: flex;
     padding: 12px 15px;
-    /* border-bottom: 0.1px solid gray; */
 }
 
 .centerBlock {
     display: flex;
-    margin-left: 25%;
+    margin-left: 15%;
     margin-right: auto;
 }
 
@@ -21,6 +19,6 @@
 }
 
 .activeLink {
-    color: rgb(245, 71, 71);
+    color: #ff6f61;
     pointer-events: none;
 }

@@ -13,10 +13,10 @@ export default class MyDocument extends Document {
                         name="description"
                         content="Создание сайтов-визиток на заказ"
                     />
-                    {/* <link
+                    <link
                         rel="stylesheet"
                         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-                    /> */}
+                    />
                 </Head>
                 <body>
                     <Main />

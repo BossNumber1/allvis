@@ -6,56 +6,72 @@ export default function Header() {
     const router = useRouter();
 
     return (
-        <div className={headerStyles.commonBlock}>
-            <div>Ustinov Corp.</div>
-            <div className={headerStyles.centerBlock}>
+        // <div className={headerStyles.commonBlock}>
+        <nav className="navbar navbar-expand-xl navbar-light @@classList">
+            <div className="container">
                 <div
-                    className={
-                        router.pathname == "/contacts"
-                            ? `${headerStyles.activeLink}`
-                            : ""
-                    }
+                    className="navbar-brand"
+                    style={{ color: "#111", fontWeight: 600 }}
                 >
-                    <Link href="/contacts">
-                        <a>Контакты</a>
-                    </Link>
+                    Ustinov Corp.
                 </div>
-                <div
-                    className={
-                        router.pathname == "/about"
-                            ? `${headerStyles.activeLink}`
-                            : ""
-                    }
-                >
-                    <Link href="/about">
-                        <a>О нас</a>
-                    </Link>
+                <div className={headerStyles.centerBlock}>
+                    <div
+                        className={
+                            router.pathname == "/contacts"
+                                ? `${headerStyles.activeLink}`
+                                : "nav-item dropdown hovered"
+                        }
+                    >
+                        <Link href="/contacts">
+                            <a className="nav-link" style={{ fontWeight: 500 }}>
+                                Контакты
+                            </a>
+                        </Link>
+                    </div>
+                    <div
+                        className={
+                            router.pathname == "/about"
+                                ? `${headerStyles.activeLink}`
+                                : "nav-item dropdown hovered"
+                        }
+                    >
+                        <Link href="/about">
+                            <a className="nav-link" style={{ fontWeight: 500 }}>
+                                О нас
+                            </a>
+                        </Link>
+                    </div>
+                    <div
+                        className={
+                            router.pathname == "/details"
+                                ? `${headerStyles.activeLink}`
+                                : "nav-item dropdown hovered"
+                        }
+                    >
+                        <Link href="/details">
+                            <a className="nav-link" style={{ fontWeight: 500 }}>
+                                Подробности
+                            </a>
+                        </Link>
+                    </div>
                 </div>
-                <div
-                    className={
-                        router.pathname == "/details"
-                            ? `${headerStyles.activeLink}`
-                            : ""
-                    }
-                >
-                    <Link href="/details">
-                        <a>Подробности</a>
-                    </Link>
+                <div className={headerStyles.rightBlock}>
+                    <div
+                        className={
+                            router.pathname == "/"
+                                ? `${headerStyles.activeLink}`
+                                : "nav-item dropdown hovered"
+                        }
+                    >
+                        <Link href="/">
+                            <a className="nav-link" style={{ fontWeight: 500 }}>
+                                Главная
+                            </a>
+                        </Link>
+                    </div>
                 </div>
             </div>
-            <div className={headerStyles.rightBlock}>
-                <div
-                    className={
-                        router.pathname == "/"
-                            ? `${headerStyles.activeLink}`
-                            : ""
-                    }
-                >
-                    <Link href="/">
-                        <a>На главную</a>
-                    </Link>
-                </div>
-            </div>
-        </div>
+        </nav>
     );
 }
