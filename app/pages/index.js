@@ -28,7 +28,7 @@ export default function Home() {
             <div style={{ textAlign: "center", marginTop: 32 }}>
                 <div>2-3 дня - 2000 рублей</div>
                 <div>
-                    <h1>Что вы получаете?</h1>
+                    <h1>Что получаете?</h1>
                 </div>
             </div>
             <ul>

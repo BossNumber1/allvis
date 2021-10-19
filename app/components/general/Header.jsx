@@ -33,13 +33,13 @@ export default function Header() {
                 </div>
                 <div
                     className={
-                        router.pathname == "/process"
+                        router.pathname == "/details"
                             ? `${headerStyles.activeLink}`
                             : ""
                     }
                 >
-                    <Link href="/process">
-                        <a>Процесс</a>
+                    <Link href="/details">
+                        <a>Подробности</a>
                     </Link>
                 </div>
             </div>

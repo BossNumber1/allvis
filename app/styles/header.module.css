@@ -2,7 +2,7 @@
     background-color: rgb(245, 227, 196);
     display: flex;
     padding: 12px 15px;
-    border-bottom: 0.1px solid gray;
+    /* border-bottom: 0.1px solid gray; */
 }
 
 .centerBlock {
