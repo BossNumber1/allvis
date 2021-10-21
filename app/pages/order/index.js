@@ -19,14 +19,16 @@ export default function Contacts() {
                             fontWeight: 700,
                             fontSize: 20,
                             width: 320,
-                            marginBottom: 25,
+                            marginBottom: 50,
+                            marginTop: 20,
+                            marginLeft: 30,
                         }}
                     >
                         Здесь вы можете оставить заявку, и наш менеджер с вами
                         свяжется
                     </div>
                     <div>
-                        <div style={{ display: "flex" }}>
+                        <div style={{ display: "flex", marginLeft: 30 }}>
                             <div className="mr-4">
                                 <IconBlock iconSrc={phone} text="89506822950" />
                                 <IconBlock
