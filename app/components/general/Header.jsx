@@ -18,14 +18,14 @@ export default function Header() {
                 <div className={headerStyles.centerBlock}>
                     <div
                         className={
-                            router.pathname == "/contacts"
+                            router.pathname == "/order"
                                 ? `${headerStyles.activeLink}`
                                 : "nav-item dropdown hovered"
                         }
                     >
-                        <Link href="/contacts">
+                        <Link href="/order">
                             <a className="nav-link" style={{ fontWeight: 500 }}>
-                                Контакты
+                                Заказать
                             </a>
                         </Link>
                     </div>

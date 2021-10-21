@@ -1,5 +1,6 @@
 import homeStyles from "../styles/home.module.css";
 import { MainLayout } from "../components/MainLayout";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -29,16 +30,16 @@ export default function Home() {
                             <li>Экономию времени и сил</li>
                             <li>Качество</li>
                         </ul>
-                        <button
-                            type="button"
-                            className="btn btn-dark mt-3"
-                            onClick={() =>
-                                (document.location.href =
-                                    "https://vk.com/moyustimov")
-                            }
-                        >
-                            Связаться
-                        </button>
+                        <Link href="/order">
+                            <a>
+                                <button
+                                    type="button"
+                                    className="btn btn-dark mt-3"
+                                >
+                                    Заказать
+                                </button>
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div
