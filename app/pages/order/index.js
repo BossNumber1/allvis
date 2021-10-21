@@ -14,15 +14,39 @@ export default function Contacts() {
             <div className={contacts.bodyPage}>
                 <FormSbor />
                 <div>
-                    <div style={{ fontWeight: 700, fontSize: 20, width: 320 }}>
-                        Здесь вы оставите заявку и наш менеджер с вами свяжется
+                    <div
+                        style={{
+                            fontWeight: 700,
+                            fontSize: 20,
+                            width: 320,
+                            marginBottom: 25,
+                        }}
+                    >
+                        Здесь вы можете оставить заявку, и наш менеджер с вами
+                        свяжется
                     </div>
                     <div>
-                        Наши контакты:
-                        <IconBlock iconSrc={phone} text="89506822950" />
-                        <IconBlock iconSrc={mail} text="dimaang23@gmail.com" />
-                        <IconBlock iconSrc={vk} text="ВКонтакте" />
-                        <IconBlock iconSrc={tg} text="Телеграмм" />
+                        <div style={{ display: "flex" }}>
+                            <div className="mr-4">
+                                <IconBlock iconSrc={phone} text="89506822950" />
+                                <IconBlock
+                                    iconSrc={mail}
+                                    text="dimaang23@gmail.com"
+                                />
+                            </div>
+                            <div>
+                                <IconBlock
+                                    iconSrc={vk}
+                                    path="https://vk.com/moyustimov"
+                                    pathUser="ВКонтакте"
+                                />
+                                <IconBlock
+                                    iconSrc={tg}
+                                    path="https://t.me/moyustimov"
+                                    pathUser="Телеграмм"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

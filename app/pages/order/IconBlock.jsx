@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-function IconBlock({ iconSrc, text }) {
+function IconBlock({ iconSrc, text = "", path = "", pathUser = "" }) {
     return (
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", marginBottom: 5 }}>
             <Image src={iconSrc} width={32} height={32} />{" "}
             <div
                 style={{
@@ -11,7 +11,7 @@ function IconBlock({ iconSrc, text }) {
                     marginLeft: 5,
                 }}
             >
-                {text}
+                {text !== "" ? text : <a href={`${path}`}>{pathUser}</a>}
             </div>
         </div>
     );
