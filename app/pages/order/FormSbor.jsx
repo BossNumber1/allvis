@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function FormSbor() {
     const [name, setName] = React.useState("");
-    const [phone, setPhone] = React.useState("");
+    const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
     const [success, setSuccess] = React.useState(false);
     const [danger, setDanger] = React.useState(false);
@@ -17,9 +17,9 @@ function FormSbor() {
         setDisabledBtn(false);
     };
 
-    let phoneChange = (e) => {
+    let emailChange = (e) => {
         e.preventDefault();
-        setPhone(e.target.value);
+        setEmail(e.target.value);
         setDanger(false);
         setDisabledBtn(false);
     };
@@ -34,10 +34,10 @@ function FormSbor() {
     let submitHandler = (e) => {
         e.preventDefault();
 
-        if (name !== "" && phone !== "" && message !== "") {
+        if (name !== "" && email !== "" && message !== "") {
             setSuccess("Заказ принят!");
             setName("");
-            setPhone("");
+            setEmail("");
             setMessage("");
         } else {
             setDisabledBtn(true);
@@ -52,9 +52,7 @@ function FormSbor() {
             {!success ? (
                 <form>
                     <div className="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">
-                            Имя
-                        </label>
+                        <label className="form-label">Имя</label>
                         <input
                             type="text"
                             className="form-control"
@@ -64,21 +62,17 @@ function FormSbor() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">
-                            Телефон
-                        </label>
+                        <label className="form-label">Email</label>
                         <input
                             type="text"
                             className="form-control"
-                            name="phone"
-                            value={phone}
-                            onChange={phoneChange}
+                            name="email"
+                            value={email}
+                            onChange={emailChange}
                         />
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">
-                            Сообщение
-                        </label>
+                        <label className="form-label">Сообщение</label>
                         <textarea
                             className="form-control"
                             name="message"
