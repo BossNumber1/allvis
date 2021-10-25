@@ -40,7 +40,7 @@ export default function About() {
                         <div>Раньше изучал ...</div>
                     </div>
                     <div className={aboutStyles.ava}>
-                        <Image src={profile} width={200} height={300} />
+                        <Image src={profile} />
                     </div>
                 </div>
             </div>
