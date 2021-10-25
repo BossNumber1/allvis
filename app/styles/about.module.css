@@ -10,3 +10,14 @@
 .info div {
     margin-right: 32px;
 }
+
+.ava img {
+    border-radius: 5px;
+    /* box-shadow: inset 0 0 30px rgb(255, 105, 105); */
+}
+
+.ava {
+    box-shadow: inset 0 0 30px rgb(43, 42, 42);
+    border-radius: 5px;
+    border: 1px solid rgb(43, 42, 42);
+}

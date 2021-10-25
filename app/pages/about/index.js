@@ -1,5 +1,7 @@
 import { MainLayout } from "../../components/MainLayout";
 import aboutStyles from "../../styles/about.module.css";
+import Image from "next/image";
+import profile from "../../public/profile.jpg";
 
 export default function About() {
     return (
@@ -37,11 +39,8 @@ export default function About() {
                         </div>
                         <div>Раньше изучал ...</div>
                     </div>
-                    <div>
-                        <img
-                            src="https://sun9-40.userapi.com/impg/2Ie7dgPmDV4YTOtwkVgDHE7GtdtxYWsRGCgdXg/bPI9vy-H4O8.jpg?size=1024x1280&quality=96&sign=738fcdec228861380c91e3e7b34e98c3&type=album"
-                            width="300px"
-                        />
+                    <div className={aboutStyles.ava}>
+                        <Image src={profile} width={200} height={300} />
                     </div>
                 </div>
             </div>

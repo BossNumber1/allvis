@@ -1,0 +1,24 @@
+.cards {
+    display: flex;
+    margin-top: 50px;
+}
+
+.cards div {
+    width: 290px;
+    height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(245, 227, 196);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+.cards div:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    background-color: rgb(252, 252, 252);
+}
