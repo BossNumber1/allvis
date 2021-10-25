@@ -1,6 +1,6 @@
 import React from "react";
 
-function DetailsCard({ text }) {
+function DetailsCard({ text, details }) {
     const [isShow, setShow] = React.useState(false);
 
     return (
@@ -46,8 +46,14 @@ function DetailsCard({ text }) {
                             />
                         </div>
                     </div>
-                    <div style={{ backgroundColor: "rgb(245, 227, 196)" }}>
-                        details...
+                    <div
+                        style={{
+                            backgroundColor: "rgb(245, 227, 196)",
+                            fontSize: 13,
+                            padding: 10,
+                        }}
+                    >
+                        {details}
                     </div>
                 </div>
             )}
