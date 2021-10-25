@@ -42,7 +42,7 @@ function DetailsCard({ text, details }) {
                         >
                             <img
                                 src={!isShow ? "/down.png" : "/up.png"}
-                                alt="icon down"
+                                alt={!isShow ? "icon down" : "icon up"}
                             />
                         </div>
                     </div>
