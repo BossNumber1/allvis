@@ -1,6 +1,5 @@
 import { MainLayout } from "../../components/MainLayout";
-import contacts from "../../styles/contacts.module.css";
-import Image from "next/image";
+import orderStyles from "../../styles/order.module.css";
 import vk from "../../public/vk.png";
 import tg from "../../public/tg.png";
 import phone from "../../public/phone.png";
@@ -11,7 +10,7 @@ import IconBlock from "./IconBlock";
 export default function Contacts() {
     return (
         <MainLayout title="Наши контакты">
-            <div className={contacts.bodyPage}>
+            <div className={orderStyles.bodyPage}>
                 <FormSbor />
                 <div>
                     <div

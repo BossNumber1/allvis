@@ -1,0 +1,18 @@
+.bodyPage {
+    display: flex;
+    margin-top: 100px;
+}
+
+/* .bodyPage a {
+    margin-right: 56px;
+} */
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .bodyPage {
+        /* background-color: orange; */
+        margin-top: 50%;
+        margin-left: 270px;
+        padding-right: 10%;
+        /* margin-right: 30%; */
+    }
+}

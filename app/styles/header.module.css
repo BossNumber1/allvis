@@ -1,6 +1,14 @@
 .commonBlock {
     display: flex;
-    padding: 12px 15px;
+    padding: 13px 93px 15px 80px;
+}
+
+.nameBrand {
+    color: #111;
+    font-weight: 600;
+    padding-top: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
 }
 
 .centerBlock {
@@ -21,4 +29,35 @@
 .activeLink {
     color: #ff6f61;
     pointer-events: none;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    .commonBlock {
+        /* background-color: greenyellow; */
+        font-size: 18px;
+        padding-left: 15px;
+    }
+
+    .nameBrand {
+        /* background-color: orange; */
+        font-size: 10.8px;
+        margin-right: 100px;
+        margin-left: 0px;
+    }
+
+    .centerBlock {
+        /* background-color: rgb(182, 243, 182); */
+        margin-left: 0px;
+    }
+
+    .centerBlock div {
+        /* background-color: rgb(241, 97, 229); */
+        margin-left: 0px;
+    }
+
+    .rightBlock {
+        text-align: right;
+        /* background-color: rgb(113, 113, 241); */
+        padding-left: 55px;
+    }
 }
