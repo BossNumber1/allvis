@@ -7,12 +7,42 @@
     margin-right: 56px;
 } */
 
-@media (min-width: 0px) and (max-width: 320px) {
+@media (min-width: 0px) and (max-width: 999px) {
+    .bodyPage {
+        position: fixed;
+        padding-right: 30px;
+        /* margin-right: 30%; */
+    }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
     .bodyPage {
         /* background-color: orange; */
-        margin-top: 50%;
-        margin-left: 270px;
-        padding-right: 10%;
-        /* margin-right: 30%; */
+        top: 50px;
+        left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 640px) {
+    .bodyPage {
+        /* background-color: rgb(0, 255, 42); */
+        top: 30px;
+        left: 0;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .bodyPage {
+        /* background-color: rgba(255, 166, 0, 0.466); */
+        top: 30px;
+        left: 50px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+    .bodyPage {
+        /* background-color: rgb(0, 132, 255); */
+        top: 30px;
+        left: 290px;
     }
 }
