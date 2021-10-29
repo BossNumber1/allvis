@@ -1,5 +1,6 @@
 .bodyPage {
     margin-left: 50px;
+    /* background-color: orange; */
 }
 
 .info {
@@ -21,4 +22,14 @@
     border-radius: 5px;
     height: 300px;
     overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 999px) {
+    .bodyPage {
+        position: fixed;
+        left: -40px;
+        top: 150px;
+        background-color: orange;
+        width: 97%;
+    }
 }
