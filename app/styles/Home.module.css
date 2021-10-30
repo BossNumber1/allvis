@@ -81,7 +81,7 @@
 @media (min-width: 0px) and (max-width: 320px) {
     .exampleBCards {
         margin-left: 174px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
@@ -100,7 +100,7 @@
         left: 0;
     }
     .heroTextWrapper {
-        margin-top: 20px;
+        margin-bottom: 20px;
         max-width: 340px;
         display: flex;
         align-items: center;
