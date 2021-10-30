@@ -4,23 +4,18 @@ import homeStyles from "../../styles/home.module.css";
 
 function FirstTextIndex() {
     return (
-        <div>
-            <div
-                style={{
-                    // marginBottom: 30,
-                    // marginLeft: 60,
-                    fontSize: "2.75rem",
-                    width: 650,
-                    // backgroundColor: "orange",
-                }}
+        <div className={homeStyles.heroTextWrapper}>
+            <div  
+                className={homeStyles.heroTitle}
             >
                 Создание сайтов-визиток на заказ...
             </div>
             <div className={homeStyles.firstblock}>
                 <div
-                    style={{
-                        margin: "32px 0px",
-                    }}
+                    className={homeStyles.subTitle}
+                    // style={{
+                    //     margin: "32px 0px",
+                    // }}
                 >
                     За 3 дня и 3000 рублей вы получаете:
                 </div>
@@ -28,6 +23,7 @@ function FirstTextIndex() {
                     <li>Экономию времени и сил</li>
                     <li>Качество</li>
                 </ul>
+            </div>
                 <Link href="/order">
                     <a>
                         <button type="button" className="btn btn-dark mt-3">
@@ -35,7 +31,6 @@ function FirstTextIndex() {
                         </button>
                     </a>
                 </Link>
-            </div>
         </div>
     );
 }

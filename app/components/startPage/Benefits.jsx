@@ -3,7 +3,7 @@ import benefitsStyles from "../../styles/benefits.module.css";
 
 function Benefits() {
     return (
-        <div className={benefitsStyles.cards}>
+        <div className={benefitsStyles.benefits}>
             <div>
                 <div
                     style={{

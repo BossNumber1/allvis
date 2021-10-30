@@ -19,10 +19,24 @@
 
 .exampleBCards {
     display: flex;
+    justify-content: flex-start;
+    /* align-self: flex-start; */
     /* background-color: aquamarine; */
 }
+.heroTitle {
+    font-size: 2.75rem;
+    width: 650px;
+}
 
-.exampleBCards img {
+.subTitle {
+    margin: 32px 0px;
+}
+
+.heroImWrapper {
+    position: relative;
+}
+
+.heroImg {
     /* padding-left: 30px; */
     width: 420px;
     /* width: 100%; */
@@ -30,18 +44,29 @@
     height: 230px;
 }
 
-.exampleBCards div:not(:first-child) {
+.heroImgContainer {
     background-color: rgb(245, 227, 196);
     /* margin: 10px; */
     padding: 10px;
+    border: 1px solid black;
     /* margin-left: auto; */
     margin-left: auto;
     margin-right: 0;
     height: 250px;
 }
 
+.heroImgContainerFirst {
+    position: relative;
+}
+
+.heroImgContainerSecond {
+    position: absolute;
+    top:130px;
+    left: 50px;
+}
+
 .firstblock {
-    background-color: white !important;
+    /* background-color: white !important; */
     /* margin: 10px; */
     padding: 0;
     /* margin-left: auto; */
@@ -53,8 +78,83 @@
     border: 1px solid black;
 } */
 
-/* @media (min-width: 0px) and (max-width: 320px) {
-    .container {
-
+@media (min-width: 0px) and (max-width: 320px) {
+    .exampleBCards {
+        margin-left: 174px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
     }
-} */
+
+    .main {
+        margin-left: 191px;
+    }
+
+    .heroImgContainerFirst {
+        display: none;
+    }
+
+    .heroImgContainerSecond {
+        position: static;
+        left: 0;
+    }
+    .heroTextWrapper {
+        margin-top: 20px;
+        max-width: 340px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heroTitle {
+        font-size: 2rem;
+        max-width: 300px;
+    }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1110px) {
+    .exampleBCards {
+        margin-left: 120px;
+    }
+} 
+@media (min-width: 769px) and (max-width: 999px) {
+
+
+    .exampleBCards {
+        position: relative;    
+    }
+
+    .exampleBCards::before {
+        content: '';
+        position: absolute;
+        width: 370px;
+        height: 200px;
+        border-radius: 20px;
+        top: -75px;
+        right: -330px;
+        background: url('https://www.jimdo.com/static/fe444c59a0e9e7dbeb39df042894619c/cf497/website_3.png') no-repeat center center;
+        background-size: cover;
+        box-shadow: 0px 18px 52.8537px rgba(162, 173, 192, 0.5);
+    }
+
+    .exampleBCards::after {
+        content: '';
+        position: absolute;
+        width: 430px;
+        height: 280px;
+        border-radius: 20px;
+        background: url('https://www.founderjar.com/wp-content/uploads/2021/01/Wix.com-homepage.png') no-repeat center center;
+        background-size: cover;
+        box-shadow: 0px 18px 52.8537px rgba(162, 173, 192, 0.5);
+        right: -100px;
+        top: 60px;
+        z-index: -1;
+    }
+
+    .heroImWrapper {
+        display: none;
+    }
+
+    
+} 
