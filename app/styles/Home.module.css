@@ -23,6 +23,11 @@
     /* align-self: flex-start; */
     /* background-color: aquamarine; */
 }
+
+.heroMinWrapper {
+    display: none;
+}
+
 .heroTitle {
     font-size: 2.75rem;
     width: 650px;
@@ -45,7 +50,7 @@
 }
 
 .heroImgContainer {
-    background-color: rgb(245, 227, 196);
+    background-color: #f5e3c4;
     /* margin: 10px; */
     padding: 10px;
     border: 1px solid black;
@@ -86,15 +91,15 @@
         justify-content: center;
         margin-bottom: 50px;
     }
-
+    
     .main {
         margin-left: 191px;
     }
-
+    
     .heroImgContainerFirst {
         display: none;
     }
-
+    
     .heroImgContainerSecond {
         position: static;
         left: 0;
@@ -109,6 +114,59 @@
     .heroTitle {
         font-size: 2rem;
         max-width: 300px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .main {
+        margin-left: 120px;
+    }
+    .heroImWrapper {
+        
+        display: none;
+    }
+    .heroTitle {
+        font-size: 1.5rem;
+        max-width: 450px;
+        text-align: center;
+    }
+    
+    .heroTextWrapper {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .exampleBCards {
+        margin-left: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .firstblock {
+        /* width: 300px; */
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .heroMinWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .heroMinInner {
+        padding: 10px;
+        max-width: 280px;
+        height: 180px;
+        background: #f5e3c4;
+        border: 1px solid #000;
+    }
+    .heroMinImg {
+        width: 100%;
+        height: 100%;
     }
 }
 

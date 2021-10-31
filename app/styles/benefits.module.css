@@ -4,7 +4,7 @@
     margin-top: 50px;
 }
 
-.benefits div {
+.benefitsWrapper {
     width: 290px;
     height: auto;
     border: 1px solid black;
@@ -18,6 +18,15 @@
     box-shadow: 0 0 10px black;
 }
 
+.benefitsTitle {
+    font-size: 20px;
+    border: "none";
+    font-weight: 700;
+    margin-left: -10px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .benefits div:hover {
     transform: scale(1.1);
     transition-duration: 1.5s;
@@ -29,5 +38,17 @@
     .benefits {
         flex-direction: column;
         margin: 0 auto;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    .benefits {
+        width: 700px !important;
+        flex-wrap: wrap;
+    }
+
+    .benefitsWrapper {
+        max-width: 300px;
     }
 }
