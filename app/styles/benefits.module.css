@@ -1,9 +1,10 @@
-.cards {
+.benefits {
     display: flex;
+    margin: 0 auto;
     margin-top: 50px;
 }
 
-.cards div {
+.benefitsWrapper {
     width: 290px;
     height: auto;
     border: 1px solid black;
@@ -17,8 +18,37 @@
     box-shadow: 0 0 10px black;
 }
 
-.cards div:hover {
+.benefitsTitle {
+    font-size: 20px;
+    border: "none";
+    font-weight: 700;
+    margin-left: -10px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.benefits div:hover {
     transform: scale(1.1);
     transition-duration: 1.5s;
     background-color: rgb(252, 252, 252);
+}
+
+
+@media (min-width: 0px) and (max-width: 320px){
+    .benefits {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+
+    .benefits {
+        width: 700px !important;
+        flex-wrap: wrap;
+    }
+
+    .benefitsWrapper {
+        max-width: 300px;
+    }
 }

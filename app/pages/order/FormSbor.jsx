@@ -31,14 +31,26 @@ function FormSbor() {
         setDisabledBtn(false);
     };
 
+    const validateEmail = (email) => {
+        var pattern  = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return pattern .test(email);
+    };
+      
+
     let submitHandler = (e) => {
         e.preventDefault();
 
         if (name !== "" && email !== "" && message !== "") {
-            setSuccess("Заказ принят!");
-            setName("");
-            setEmail("");
-            setMessage("");
+            if(validateEmail(email) == true){
+                setSuccess("Заказ принят!");
+                setName("");
+                setEmail("");
+                setMessage("");
+            } else {
+                setDisabledBtn(true);
+                setDanger("Проверьте правльность электронной почты!");
+            }
+            
         } else {
             setDisabledBtn(true);
             setDanger("Стоит заполнить все поля");

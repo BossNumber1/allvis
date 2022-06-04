@@ -6,7 +6,7 @@ export default function Header() {
     const router = useRouter();
 
     return (
-        <div className={headerStyles.commonBlock}>
+        <header className={headerStyles.commonBlock}>
             <div className={headerStyles.nameBrand}>Ustinov Corp.</div>
             <div className={headerStyles.centerBlock}>
                 <div
@@ -71,6 +71,6 @@ export default function Header() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }
